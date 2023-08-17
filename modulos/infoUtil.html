@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consejo del Discapacitado</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <nav id="navBarTop" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div>
+                        <div class="col-12 d-flex justify-content-center align-items-center" style="height: 50px;">
+                            <img src="../assets/img/logo.png" alt="">
+                            <h6 class="text-light" style="margin-left: 15px;">Consejo del Discapacitado</h6>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="./desk.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./tramites.html">Tramites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./infoUtil.html">Informacio Util</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="infoScreen" class="d-flex flex-column justify-content-center align-items-center p-3">
+            <div class="input-group mb-3">
+                <input id="searchbar" type="text" class="form-control" placeholder="Buscar"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2"
+                    style="background-color: #2e2c2c; color: white;">
+                <span class="input-group-text colorBgRN text-light" id="basic-addon2">Buscar</span>
+            </div>
+
+            <h2 class="colorRN">Proximos Eventos / Encuentros</h2>
+
+            <div class="mt-3" id="contentCard">
+                <div class="card text-bg-dark mb-3 cardPlanillas" style="width: 23rem;">
+                    <div class="card-body d-flex justify-content-center text-center">
+                        <h5 class="card-title">Trabajo en conjunto con instituciones de Allen</h5>
+                    </div>
+                    <div class="card-footter d-flex justify-content-between align-items-center">
+                        <h6 class="text-light m-3">15/03 - 25/03</h6>
+                        <button type="text" class="btn colorBgRN text-light m-3" data-bs-toggle="modal"
+                            data-bs-target="#modalDetailNoti">Ver mas</button>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark mb-3 cardPlanillas" style="width: 23rem;">
+                    <div class="card-body d-flex justify-content-center text-center">
+                        <h5 class="card-title">Trabajo en conjunto con instituciones de Allen</h5>
+                    </div>
+                    <div class="card-footter d-flex justify-content-between align-items-center">
+                        <h6 class="text-light m-3">15/03 - 25/03</h6>
+                        <button type="text" class="btn colorBgRN text-light m-3" data-bs-toggle="modal"
+                            data-bs-target="#modalDetailNoti">Ver mas</button>
+                    </div>
+                </div>
+
+                <div class="card text-bg-dark mb-3 cardPlanillas" style="width: 23rem;">
+                    <div class="card-body d-flex justify-content-center text-center">
+                        <h5 class="card-title">Trabajo en conjunto con instituciones de Allen</h5>
+                    </div>
+                    <div class="card-footter d-flex justify-content-between align-items-center">
+                        <h6 class="text-light m-3">15/03 - 25/03</h6>
+                        <button type="text" class="btn colorBgRN text-light m-3" data-bs-toggle="modal"
+                            data-bs-target="#modalDetailNoti">Ver mas</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- modals -->
+
+    <div id="modalDetailNoti" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalSingUp">
+                <div class="modal-header modalSingUpHeader text-center ">
+                    <h3 class="modal-title colorRN">Trabajo en conjunto con instituciones de Allen</h3>
+                </div>
+                <div class="modal-body m-3 d-flex flex-column justify-content-center align-items-center text-center" style="border: 1px solid #8cc434; border-radius: 15px;">
+                    <p class="text-light">El Consejo del Discapacitado del 15 al 25 de marzo se encontrará trabajando
+                        con las instituciones intermedias de la Localidad de Allen, si tenes alguna inquietud podés
+                        contactarnos por este medio, nos dejas tu inquietud y podemos concretar un encuentro.
+                    </p>
+                    <div class=""><img src="../assets/img/hospital.jpeg" alt="hostipal de allen" srcset=""></div>
+                </div>
+                <div class="m-3 d-flex justify-content-end">
+                    <button type="text" class="btn btn-secondary" style="margin-right: 15px;" data-bs-dismiss="modal"
+                        aria-label="Close">Salir
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scripts-->
+    <script src="../assets/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</body>
+
+</html>

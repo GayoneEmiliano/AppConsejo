@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consejo del Discapacitado</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <main>
+        <nav id="navBarTop" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div>
+                        <div class="col-12 d-flex justify-content-center align-items-center" style="height: 50px;">
+                            <img src="../assets/img/logo.png" alt="">
+                            <h6 class="text-light" style="margin-left: 15px;">Consejo del Discapacitado</h6>
+                        </div>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="./desk.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./tramites.html">Tramites</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./infoUtil.html">Informacio Util</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+                        </li>
+                        <hr style="border: 1px solid #fff;">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Salir</a>
+                        </li>
+                        <hr style="border: 1px solid #fff;">
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="inicioScreen" class="text-center">
+            <h3 class="colorRN">Juntas Evaluadoras de Discapacidad</h3>
+
+            <div class="searchJunta p-3 m-2">
+                <h5 class="colorRN">Localidad</h5>
+                <select class="form-select" aria-label="Default select example" onchange="cambiaJunta(this.value)">
+                    <option selected>Selecciona Localidad</option>
+                    <option value="1">General Roca</option>
+                    <option value="2">Viedma</option>
+                    <option value="3">Cipolletti</option>
+                </select>
+            </div>
+
+            <div id="contentJuntaInfo">
+                
+            </div>
+
+            <h2 class="colorRN">Requisitos</h2>
+
+            <div class="contentRequisitos m-3 p-4" >
+                <ul class="list-group">
+                    <li class=" text-light m-2">Documento de Identidad</li>
+                    <li class=" text-light m-2">Certificado médico en donde conste diagnóstico, 
+                        secuela y tratamiento (con una antigüedad no mayor 
+                        a seis meses).
+                    </li>
+                    <li class=" text-light m-2">Estudios médicos complementarios e informes de 
+                        equipo tratante.
+                    </li>
+                    <li class=" text-light m-2">Carnet de obra social (si la tuviera)</li>
+                    <li class=" text-light m-2">Ultimo recibo de sueldo (si trabaja)</li>
+                    <li class=" text-light m-2">Ultimo comprobante de haber jubilatorio o pensión
+                        (si corresponde)
+                    </li>
+                    <li class=" text-light m-2">Partida de nacimiento/curatela/apoyos 
+                        designados judicialmente (si existieran)
+                    </li>
+                  </ul>
+            </div>
+        </section>
+    </main>
+
+    <!--Scripts-->
+    <script src="../assets/main.js" type="module"></script>
+    <script src="../assets/funtions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</body>
+
+</html>
