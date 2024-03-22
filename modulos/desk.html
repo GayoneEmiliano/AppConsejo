@@ -97,9 +97,34 @@
                   </ul>
             </div>
 
-            <button type="button" class="btn btn-success" onclick="abreMapaJuntas()">Ver mapa</button>
+            <button type="button" class="btn btn-success" onclick="seeModalJuntaIti()">Ver Junta Itinerante</button>
         </section>
     </main>
+
+
+
+    <!-- MODALES -->
+    
+    <div id="modalseeJuntaItinerante" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modalSingUp">
+                <div class="modal-header">
+                    <h1 class="modal-title colorRN">¡Junta Itinerante!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center flex-column align-items-center">
+                    
+                    <h4 class="text-light">Desde el 25/03 hasta el 31/03</h4>
+                    <p style="color: #fff;">se encontrara en la localidad de </p>
+                    <h4 class="text-light">El Bolson</h4>
+                    <p style="color: #fff;">*Solo se atendera a pacientes cuyos estudios hayan sido APROBADOS por la junta evaluadora*</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
     <!--Scripts-->
     <script src="../assets/main.js" type="module"></script>

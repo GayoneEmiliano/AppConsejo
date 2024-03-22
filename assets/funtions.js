@@ -129,3 +129,8 @@ async function iniciarMap(){
 
     }
 }
+
+
+const seeModalJuntaIti = () =>{
+    $('#modalseeJuntaItinerante').modal("show")
+}
