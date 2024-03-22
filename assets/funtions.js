@@ -79,3 +79,53 @@ const cambiaJunta = (id) =>{
     document.getElementById('contentJuntaInfo').innerHTML = myVar
 
 }
+
+async function iniciarMap(){
+    const coordJuntas = [
+        ['Viedma', -40.8109785, -62.9886602, 1],
+        ['El Bolson', -41.9607526, -71.5376008, 2],
+        ['Bariloche', -41.1470595, -71.2989745, 3],
+        ['Los Menucos', -40.8429138, -68.0852114, 4],
+        ['Valcheta', -40.675814, -66.170154, 5],
+        ['Sierra Grande', -41.6068469, -65.3558932, 6],
+        ['Luis Beltran', -39.3088163, -65.7611452, 7],
+        ['Allen', -38.9790878, -67.8258805, 8],
+        ['Cipolleti', -38.9357152, -67.9683139, 9],
+        ['Gral. Roca', -39.030553, -67.5843182, 10],
+        ['Rio Colorado', -38.9930665, -64.0904999, 11],
+        ['Gral Conesa', -40.1080658, -64.4588293, 12],
+        ['San Antonio Oeste', -40.7308919, -64.9440177, 13],
+        ['Villa Regina', -39.1021068, -67.0846562, 14],
+    ]
+
+    var coordIni = {lat:-39.0204977 ,lng: -67.5974414};
+    var map = new google.maps.Map(document.getElementById('contentMap'),{
+      zoom: 10,
+      center: coordIni
+    });
+
+    // var marker = new google.maps.Marker({
+    //   position: coordIni,
+    //   map: map
+    // });
+
+    
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker
+    
+    for (i = 0; i < coordJuntas.length; i++) {  
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(coordJuntas[i][1], coordJuntas[i][2]),
+        map: map
+      });
+      
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(coordJuntas[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+
+    }
+}

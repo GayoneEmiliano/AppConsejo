@@ -20,6 +20,3 @@ onAuthStateChanged(authUser, async (user) => {
 //     })
 // }
 
-const cambiaJunta = (id) =>{
-    console.log(id);
-}
